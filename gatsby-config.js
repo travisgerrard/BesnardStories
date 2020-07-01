@@ -6,9 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `the_99214`,
-    description: `Thoughts on medicine and technology`,
-    author: `Dr. Gerrard`,
+    title: `Besnard Stories`,
+    description: `Fiction from the Island`,
+    author: `Variouss`,
   },
   /* Your site config here */
   plugins: [
@@ -33,8 +33,8 @@ module.exports = {
         name: `GatsbyJS`,
         short_name: `GatsbyJS`,
         start_url: `/`,
-        background_color: `#6b37bf`,
-        theme_color: `#6b37bf`,
+        background_color: `#267933`,
+        theme_color: `#267933`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,

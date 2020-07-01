@@ -7,11 +7,14 @@ export default function About({ data }) {
     <Layout>
       <h1>About {data.site.siteMetadata.title}</h1>
       <p>
-        I was watching The Art of Doing Science and Engineering videos on
-        youtube and was thinking about how it relates to my profession, being a
-        doctor. The thoughts I had slipped away, as always. Then I had a new
-        thought, why not write your thoughts down. I'm only half sarcastic.
-        Anyway, this site is the result of the above thoughts.
+        After arriving home from visiting Besnard in the summer of 2019 my
+        children started asking for stories when going #2. Specifically, they
+        wanted Besnard stories with Birch, Maple, Dylan and Georgia. I think
+        Stacey told the first story. Since then, many stories have been told.
+        Most undocumented. Then, in March 2020, my Granny Nikki told her first
+        Besnard story. Subsequently, when Granny Nikki and Grandpa Peter were
+        spending their Spring 2020 at Besnard, they wrote and emailed stories to
+        the 4 adventurers. This website is these stories in an organized format.
       </p>
     </Layout>
   )

@@ -12,12 +12,19 @@ export default function Home({ data }) {
         <h1
           css={css`
             display: inline-block;
-            /* border-bottom: 1px solid; */
+            color: #3e5314;
+            border-bottom: 1px solid;
           `}
         >
-          the_99214
+          Besnard Stories
         </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        <h4
+          css={css`
+            color: #3e5314;
+          `}
+        >
+          {data.allMarkdownRemark.totalCount} Posts
+        </h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link
@@ -30,18 +37,25 @@ export default function Home({ data }) {
               <h3
                 css={css`
                   margin-bottom: ${rhythm(1 / 4)};
+                  color: #3e5314;
                 `}
               >
                 {node.frontmatter.title}{" "}
                 <span
                   css={css`
-                    color: #bbb;
+                    color: #8a7447;
                   `}
                 >
                   — {node.frontmatter.date}
                 </span>
               </h3>
-              <p>{node.excerpt}</p>
+              <p
+                css={css`
+                  color: #25280f;
+                `}
+              >
+                {node.excerpt}
+              </p>
             </Link>
           </div>
         ))}

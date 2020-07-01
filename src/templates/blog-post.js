@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { css } from "@emotion/core"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -9,8 +10,37 @@ export default function BlogPost({ data }) {
     <Layout>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
       <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1
+          css={css`
+            color: #3e5314;
+          `}
+        >
+          {post.frontmatter.title}
+        </h1>
+        <div>
+          <h3
+            css={css`
+              color: #8a7447;
+              display: inline-block;
+            `}
+          >
+            By: {post.frontmatter.author}
+          </h3>
+          <h3
+            css={css`
+              color: #8a7447;
+              float: right;
+            `}
+          >
+            {post.frontmatter.date}
+          </h3>
+        </div>
+        <div
+          css={css`
+            color: #25280f;
+          `}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </div>
     </Layout>
   )
@@ -22,6 +52,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
+        date
       }
       excerpt
     }
