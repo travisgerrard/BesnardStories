@@ -18,6 +18,10 @@ export default function Home({ data }) {
         >
           Besnard Stories
         </h1>
+        <img
+          src="https://res.cloudinary.com/dehixvgdv/image/upload/v1595450909/Besnard%20Stories/IMG_2866.jpg"
+          alt="Georgia Picture"
+        />
         <h4
           css={css`
             color: #3e5314;
